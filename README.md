@@ -1,6 +1,6 @@
 <h1 align="center" >GirlScript-Jamshedpur</h1>
 
-<p align="center"><img width=30% src="https://github.com/GirlscriptJamshedpur/GirlscriptJamshedpur.github.io/blob/master/images/header/logo.png"></p>
+<p align="center"><img width=30% src="https://girlscript-jamshedpur.github.io/images/header/logo-jamshed.jpg"></p>
 
 view Live Demo [here](https://girlscript-jamshedpur.github.io/) .
 
