@@ -3006,3 +3006,97 @@ textarea:focus {
     padding: 10px;
     width: 100%;
 }
+/* Blogs Section*/
+
+.latest-news-area{
+    margin-top: 20px;
+}
+
+.latest-news-wrap{
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.news-img{
+    position: relative;
+}
+
+.news-img:before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    content: "";
+    opacity: 0;
+    transform: scale(.8);
+    transition: all 0.5s;
+}
+
+.latest-news-wrap:hover .news-img:before{
+    opacity: .5;
+    transform: scale(1);
+
+}
+
+.deat{
+    background: #ee7723 none repeat scroll 0 0;
+    height: 70px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 70px;
+    padding: 10px;
+}
+
+.deat span{
+    display: block;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.news-content{
+    padding: 20px;
+    margin-left: 3px;
+}
+
+.news-content span{
+    font-size: 18px;
+    display: inline-block;
+}
+
+.news-content .fa{
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.news-content .fa-medium{
+    color: #000000;
+}
+
+.news-content .fa-twitter{
+    color: #0084b4;
+}
+
+.news-content .fa-linkedin{
+    color: #0077b5;
+}
+
+.news-content .fa-github{
+    color: #000000;
+}
+
+.news-content p{
+    margin-bottom: 15px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.news-content button a{
+    font-size: 14px;
+    color: #000000;
+}
+
+/*Blog section end*/
