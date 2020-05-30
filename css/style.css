@@ -1908,9 +1908,7 @@ textarea:focus {
     background: #fff;
 }
 
-.faq_content_wrapper h1 {
-    color: #000000 !important;
-}
+
 
 .lv_faq_wrapper .panel-title {
     position: relative;
@@ -3100,3 +3098,34 @@ textarea:focus {
 }
 
 /*Blog section end*/
+
+
+/* Team Section */
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 380px;
+    background: #fff;
+
+  }
+ 
+  .swiper-slide .details{
+      box-sizing: border-box;
+      font-size: 20px;
+      padding-bottom: 20px;
+   
+     
+  }
+  .swiper-slide .details span{
+      color: #ff414c;
+  }
+.header1 h1{
+   color: #fff;
+}
