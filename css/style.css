@@ -3018,7 +3018,24 @@ textarea:focus {
     position: relative;
 }
 
+.event-img{
+    position: relative;
+}
+
 .news-img:before{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    content: "";
+    opacity: 0;
+    transform: scale(.8);
+    transition: all 0.5s;
+}
+
+.event-img:before{
     position: absolute;
     left: 0;
     top: 0;
@@ -3034,7 +3051,11 @@ textarea:focus {
 .latest-news-wrap:hover .news-img:before{
     opacity: .5;
     transform: scale(1);
+}
 
+.latest-event-wrap:hover .event-img:before{
+    opacity: .1;
+    transform: scale(1.15);
 }
 
 .deat{
@@ -3075,11 +3096,19 @@ textarea:focus {
 }
 
 .news-content .fa-twitter{
-    color: #0084b4;
+    color: #00acee;
 }
 
 .news-content .fa-linkedin{
-    color: #0077b5;
+    color: #0e76a8;
+}
+
+.news-content .fa-instagram{
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 .news-content .fa-github{
@@ -3097,6 +3126,56 @@ textarea:focus {
     color: #000000;
 }
 
+.event-content{
+    padding: 20px;
+    margin-left: 3px;
+}
+
+.event-content span{
+    font-size: 18px;
+    display: inline-block;
+}
+
+.event-content .fa{
+    padding: 10px 10px;
+    cursor: pointer;
+}
+
+.event-content .fa-medium{
+    color: #000000;
+}
+
+.event-content .fa-twitter{
+    color: #00acee;
+}
+
+.event-content .fa-linkedin{
+    color: #0e76a8;
+}
+
+.event-content .fa-instagram{
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.event-content .fa-github{
+    color: #000000;
+}
+
+.event-content p{
+    margin-bottom: 15px;
+    text-align: justify;
+    margin-top: 20px;
+}
+
+.event-content button a{
+    font-size: 14px;
+    color: #000000;
+}
+
 /*Blog section end*/
 
 
@@ -3105,7 +3184,7 @@ textarea:focus {
     width: 100%;
     padding-top: 50px;
     padding-bottom: 50px;
-  
+
   }
   .swiper-slide {
     background-position: center;
@@ -3115,13 +3194,13 @@ textarea:focus {
     background: #fff;
 
   }
- 
+
   .swiper-slide .details{
       box-sizing: border-box;
       font-size: 20px;
       padding-bottom: 20px;
-   
-     
+
+
   }
   .swiper-slide .details span{
       color: #ff414c;
@@ -3129,4 +3208,3 @@ textarea:focus {
 .header1 h1{
    color: #fff;
 }
-
