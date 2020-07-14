@@ -263,9 +263,11 @@ textarea:focus {
 }
 .schedule-table th[scope="row"] {
     font-size: 15px;
+    text-align: center;
 }
 .schedule-table th[scope="col"] {
     font-size: 15px;
+    text-align: center;
 }
 .schedule-table td {
     border-radius: 20px;
