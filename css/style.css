@@ -8,6 +8,7 @@
   --black: #3c3c3c;
   --white: #fff;
   --grey: #d7d7d7;
+  --schedule-font-color: #3c3c3c;
 }
 
 * {
@@ -245,6 +246,52 @@ textarea:focus {
 }
 
 /*#status img {}*/
+
+/*-- Schedule Table CSS --*/
+.schedule-area{
+    margin-top: 20px;
+}
+.schedule-container{
+    padding: 25px;
+    width: 75%;
+    color: var(--schedule-font-color);
+}
+.schedule-table {
+    table-layout: fixed;
+    text-align: center;
+    vertical-align: middle;
+}
+.schedule-table th[scope="row"] {
+    font-size: 15px;
+}
+.schedule-table th[scope="col"] {
+    font-size: 15px;
+}
+.schedule-table td {
+    border-radius: 20px;
+    overflow: visible;
+}
+.schedule-table td[rowspan] {
+    vertical-align: middle;
+}
+.schedule-table-earth {
+    background-color: #ffa726;
+}
+.schedule-table-mercury {
+    background-color: #9ccc65;
+}
+.schedule-table-venus {
+    background-color: #ff8a65;
+}
+.schedule-table-mars {
+    background-color: #b3e5fc;
+}
+.schedule-table-jupiter {
+    background-color: #81d4fa;
+}
+.schedule-table-saturn {
+    background-color: #26c6da;
+}
 
 /*-- Header Css Start --*/
 
