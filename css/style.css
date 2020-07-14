@@ -59,6 +59,12 @@ h6,
     color: #222222;
 }
 
+.heading-wrapper h1{
+    margin: 10px;
+    font-family: monospace;
+    color: inherit;
+}
+
 input,
 select,
 button {
