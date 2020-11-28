@@ -189,10 +189,10 @@
     background-image: linear-gradient(to right bottom, #7ed56f, #28b485)
 }
 
-.card__side--back-5-new {
-    background-image: -webkit-gradient(linear, left top, right bottom, from(#ffb900), to(#ff7730));
-    background-image: linear-gradient(to right bottom, #ffb900, #ff7730)
-}
+/*.card__side--back-5-new {*/
+/*    background-image: -webkit-gradient(linear, left top, right bottom, from(#ffb900), to(#ff7730));*/
+/*    background-image: linear-gradient(to right bottom, #ffb900, #ff7730)*/
+/*}*/
 
 .card__side--back-6-new {
     background-image: -webkit-gradient(linear, left top, right bottom, from(#7ed56f), to(#28b485));
