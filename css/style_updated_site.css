@@ -240,43 +240,51 @@
 }
 
 .card__picture--1-new {
-    background-image: url("../images/Core members/Apurva Raj.jpeg");
+    background-image: url("../images/Core members/Aditya\ Anand\(chapter\ Lead\).jpeg");
 }
 
 .card__picture--2-new {
-    background-image: url("../images/Core members/Subham Choudhary.jpeg");
+    background-image: url("../images/Core members/Antalina\ Sarkar\(content\).jpeg");
 }
 
 .card__picture--3-new {
-    background-image: url("../images/Core members/Shrayansh Jain.jpeg");
+    background-image: url("../images/Core members/Thejasree\ Kalri\(web\ dev\).jpeg");
 }
 
 .card__picture--4-new {
-    background-image: url("../images/Core members/Thejasree Kalri.jpeg");
+    background-image: url("../images/Core members/Divyansh\ Sinha\(web\ dev\).jpg");
 }
 
 .card__picture--5-new {
-    background-image: url("../images/Core members/Rohan Nishant.jpeg");
+    background-image: url("../images/Core members/Nikita\ Mandal\(web\ dev\).jpg");
 }
 
 .card__picture--6-new {
-    background-image: url("../images/Core members/Aditya Anand.jpeg");
+    background-image: url("../images/Core members/Mohit\ Tripathi\(web\ dev\).jpg");
 }
 
 .card__picture--7-new {
-    background-image: url("../images/Core members/Antalina Sarkar.jpeg");
+    background-image: url("../images/Core members/Shrayansh\ Jain\(mgmt\).jpeg");
 }
 
 .card__picture--8-new {
-    background-image: url("../images/Core members/Ravula Sreeja.jpeg");
+    background-image: url("../images/Core members/Zuneha_\ Khanam\(mgmt\).jpg");
 }
 
 .card__picture--9-new {
-    background-image: url("../images/Core members/Manjari Chakrovarty.jpeg");
+    background-image: url("../images/Core members/ritu\ lohar\(mgmt\).jpg");
 }
 
 .card__picture--10-new {
-    background-image: url("../images/Core members/Rakshit Ramesh Iyer.jpeg");
+    background-image: url("../images/Core members/Avesh\ Das\(graphic\).jpg");
+}
+
+.card__picture--11-new {
+    background-image: url("../images/Core members/Sushma\ Mahato\(social\ Media\).jpg");
+}
+
+.card__picture--12-new {
+    background-image: url("../images/Core members/Sadaf\ Irfan\(social\ Media\).jpg");
 }
 
 .card__heading-new {
