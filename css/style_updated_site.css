@@ -283,6 +283,10 @@
     background-image: url("../images/Core members/Sadaf\ Irfan\(social\ Media\).jpg");
 }
 
+.card__picture--12-new {
+    background-image: url("../images/Core members/Riya\ Kumari\(content\).jpeg");
+}
+
 .card__heading-new {
     font-size: 1.2rem;
     font-weight: 300;
