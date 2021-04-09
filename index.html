@@ -996,12 +996,41 @@ Template Name: Live Event
 <div>
     <section class="latest-event-area" id="events">
         <div class="container">
-            <div class="row">
+            <div class="row" style="display: flex; width: 100%;">
                 <div class="event-active">
-                    <div class="col-md-4">
+
+
+                    <div class="col-md-4 media" >
                         <div class="latest-event-wrap">
                             <div class="event-img">
-                                <img src="./images/content/confidence%20in%20the%20workplace.jpg"
+                                <img src="./images/content/How to Ace an Internship.png" 
+                                     class="img-responsive">
+                            </div>
+                            <div class="event-content">
+                                <a href="https://twitter.com/girlscript_Jsr"><span class="fa fa-twitter"></span> </a>
+                                <a href="https://www.instagram.com/girlscript_jamshedpur/"><span
+                                        class="fa fa-instagram"></span> </a>
+                                <a href="https://www.linkedin.com/company/girlscript-jamshedpur/"><span
+                                        class="fa fa-linkedin"></span> </a>
+                                <a href="https://github.com/girlscript-jamshedpur"><span class="fa fa-github"></span>
+                                </a>
+                                <p>
+                                <h1>How To Ace an Internship</h1>
+                                Apurva Raj, ex Tata Steel Intern, an AI Enthusiast and a technical writer discussed the Do's and Dont's while applying for an Internship. 
+                                Also the best strategies to Ace an Internship at your favourite company. 
+                                
+                                </p><br>
+                                <button class="btn btn-info"><a href="eventPages/how-to-ace-internship.html">Know
+                                    More</a></button>
+                            </div>
+                        </div>
+                    </div> 
+
+
+                    <div class="col-md-4 media">
+                        <div class="latest-event-wrap">
+                            <div class="event-img">
+                                <img src="./images/content/confidence%20in%20the%20workplace.jpg" 
                                      class="img-responsive">
                             </div>
                             <div class="event-content">
@@ -1022,7 +1051,7 @@ Template Name: Live Event
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 media" >
                         <div class="latest-event-wrap">
                             <div class="event-img">
                                 <img src="./images/content/resume-and-profile-building.png" class="img-responsive">
@@ -1045,7 +1074,7 @@ Template Name: Live Event
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 media" >
                         <div class="latest-event-wrap">
                             <div class="event-img">
                                 <img src="./images/content/coderantine.png" class="img-responsive">
@@ -1067,13 +1096,70 @@ Template Name: Live Event
                                 </button>
                             </div>
                         </div>
-                    </div>
+                    </div>                                       
                 </div>
             </div>
         </div>
     </section>
 </div>
 <br><br><br><br>
+
+<!-- Internal CSS for Event Section -->
+
+<style>
+    .media{
+        width: 50%;
+        
+        margin-top: 50px;
+        
+    }
+    .media:first-child{
+        margin-top: 20px;        
+    }
+    .media:first-child .event-content{
+        margin-top: 10px;        
+    }
+
+    .media:nth-child(2){
+        margin-top: 20px;
+    }
+
+    .media:nth-child(2) .btn-info{
+        margin-top: -20px;
+    }
+
+    .media:nth-child(3) .btn-info{
+        margin-top: 16.5px;
+    }
+
+    .event-img:before{
+        height: 97%;
+    }
+
+    .event-content{
+        height: 290.4px;
+    }
+    
+
+    @media screen and (max-width: 600px) {
+        .media{
+            width: 100%;
+            margin-top: 20px;
+            height: fit-content;
+        }
+        .row{
+            margin-left: 1px;
+        }
+
+        .event-content{
+            height: fit-content;
+        }
+        
+    }
+</style>
+
+<!-- End of Internal CSS -->
+
 <!--Events section end-->
 <!-- Footer Wrapper Start -->
 <div class="lv_footer_wrapper">
