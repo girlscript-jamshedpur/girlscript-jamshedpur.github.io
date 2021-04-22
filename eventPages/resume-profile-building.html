@@ -1,538 +1,93 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-<head>
-  <meta charset="utf-8" />
-  <!-- Required meta tags -->
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet" />
-  <!-- Style Link -->
-  <link rel="stylesheet" type="text/css" href="../css/style_updated_site.css" />
-  <link rel="stylesheet" type="text/css" href="../css/animate.css" />
-  <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
-  <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
-  <link rel="stylesheet" type="text/css" href="../css/owl.carousel.css" />
-  <link rel="stylesheet" type="text/css" href="../css/owl.theme.default.css" />
-  <link rel="stylesheet" type="text/css" href="../css/magnific-popup.css" />
-  <link rel="stylesheet" type="text/css" href="../css/fonts.css" />
-  <link rel="stylesheet" href="../css/swiper.min.css">
-  <link rel="stylesheet" type="text/css" href="../css/style.css" />
-
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat:wght@600&family=Lobster+Two:ital@1&family=Piedra&display=swap"
-    rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
-  <!-- favicon links -->
-  <link rel="shortcut icon" type="image/icon" href="../images/header/favicon.png" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous" />
-  <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-
-
-
-  <title>Resume and Profile Building</title>
-</head>
-<style media="screen">
-  :root {
-    --font-color: black;
-    --bg-color: #2e2e2a;
-    --bg-inverse-color: #ddd;
-    --gradient: linear-gradient(45deg,
-        #845ec2,
-        #d65db1,
-        #ff6f91,
-        #ff9671,
-        #ffc75f,
-        #f9f871);
-  }
-
-  body {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    min-height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1em;
-    line-height: 1.6;
-    color: #333;
-    background: white;
-
-    background-position: center;
-  }
-
-  .content {
-    margin-top: 7em;
-  }
-
-  .heading {
-    margin: 0 0 0.5em;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-style: italic;
-    line-height: auto;
-    background-image: var(--gradient);
-    background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-  }
-
-  .title {
-    text-align: center;
-  }
-
-  .title::before {
-    content: open-quote;
-  }
-
-  .title::after {
-    content: close-quote;
-  }
-
-  @media screen and (max-width: 600px) {
-    .title {
-      font-size: 25px;
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <title>Resume and Profile Building</title>
+  </head>
+  <style media="screen">
+    :root {
+      --font-color: #3dd03c;
+      --bg-color: #2e2e2a;
+      --bg-inverse-color: #ffffff;
     }
-
-    .box {
-      width: 90%;
-      margin: 0;
-      margin-left: 20px;
-      margin-bottom: 20px;
-    }
-
-    .lv_header_wrapper .lv_menu_btn {
-      display: none;
-    }
-
-    .lv_header_wrapper .responsive_main_logo {
-      margin-left: 46px;
-    }
-
-  }
-
-  p {
-    padding: 10px;
-  }
-
-
-
-  span {
-    font-weight: 900;
-  }
-
-  span::before {
-    content: open-quote;
-  }
-
-  span::after {
-    content: close-quote;
-  }
-
-  /* loading dots */
-
-  .loading:after {
-    content: " .";
-    animation: dots 1s steps(5, end) infinite alternate-reverse;
-  }
-
-  @keyframes dots {
-
-    0%,
-    20% {
+    body {
+      background-color: var(--bg-color);
       color: var(--font-color);
-      text-shadow: 1em 0 0 var(--font-color), 2em 0 0 var(--font-color);
+      font-family: "Source Code Pro", monospace;
+      font-size: 1em;
+    }
+    p::before {
+      content: ">> ";
     }
 
-    40% {
-      color: var(--bg-inverse-color);
-      text-shadow: 1em 0 0 var(--font-color), 2em 0 0 var(--font-color);
-    }
+    /* loading dots */
 
-    60% {
-      text-shadow: 1em 0 0 var(--bg-inverse-color), 2em 0 0 var(--font-color);
-    }
+    /*.loading:after {*/
+    /*  content: " .";*/
+    /*  animation: dots 2s steps(5, end) infinite;*/
+    /*}*/
 
-    80%,
-    100% {
-      text-shadow: 1em 0 0 var(--bg-inverse-color),
-        2em 0 0 var(--bg-inverse-color);
-    }
-  }
-</style>
+    /*@keyframes dots {*/
+    /*  0%,*/
+    /*  20% {*/
+    /*    color: var(--font-color);*/
+    /*    text-shadow: 1em 0 0 var(--font-color), 2em 0 0 var(--font-color);*/
+    /*  }*/
+    /*  40% {*/
+    /*    color: var(--bg-inverse-color);*/
+    /*    text-shadow: 1em 0 0 var(--font-color), 2em 0 0 var(--font-color);*/
+    /*  }*/
+    /*  60% {*/
+    /*    text-shadow: 1em 0 0 var(--bg-inverse-color), 2em 0 0 var(--font-color);*/
+    /*  }*/
+    /*  80%,*/
+    /*  100% {*/
+    /*    text-shadow: 1em 0 0 var(--bg-inverse-color),*/
+    /*      2em 0 0 var(--bg-inverse-color);*/
+    /*  }*/
+    /*}*/
+  </style>
+  <body>
+    <main>
+      <h1>Resume and Profile Building Event Page</h1>
+      <p class="loading">This event is over.</p>
+      <p>Date: 10th July 2020 to 12th July 2020</p>
+    </main>
 
-<body>
-
-  <!-- Header -->
-
-  <div data-scroll-index="0" style="width:100%;float:center;">
-    <div class="lv_header_wrapper" style="position: fixed; box-shadow: 0 0 15px 0 rgba(0, 0, 0, .35); z-index: 2;">
-      <div class="lv_img_overlay"></div>
-      <div class="lv_top_header_wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-              <div class="responsive_main_logo">
-                <img src="../images/header/Jamshedpur.png" alt="Logo" title="GirlScript Logo" height="70"
-                  style="position:relative; margin-left: auto; margin-right: auto; float: left; ">
-              </div>
-            </div>
-            <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
-              <button class="lv_menu_btn" style="position: absolute;"><i class="fa fa-bars"
-                  aria-hidden="true"></i></button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="lv_bottom_header_wrapper">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
-              <div class="event_logo_wrapper">
-                <div class="logo_wrapper">
-                  <img src="../images/header/Jamshedpur.png" alt="Logo" title="GirlScript Logo" height="103">
-                </div>
-              </div>
-            </div>
-            <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-              <div class="lv_mainmenu_wrapper">
-                <div class="lv_main_menu_wrapper">
-                  <div class="lv_main_menu lv_single_index_menu">
-                    <div class="logo_wrapper_inside">
-                      <img src="images/header/Jamshedpur.png" alt="Logo" title="GirlScript Logo" height="103">
-                    </div>
-                    <div class="line-which-is-straight"></div>
-                    <ul>
-                      <li><a href=#1> ABOUT</a></li>
-                      <li><a href="#2"> MENTOR</a></li>
-                      <li><a href="#3"> PHOTOS</a></li>
-
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Header End -->
-
-    <div class="content" id="1" style="margin-top: 150px;">
-      <section class="box">
-        <div class="container p-3 myDiv">
-          <div class="lv_heading_center" style="margin: 0;">
-            <div class="faq_content_wrapper">
-              <h1 class="heading" style="margin-top:30px;font-family: 'Bebas Neue', cursive;font-size: 4rem">About</h1>
-            </div>
-          </div>
-          <h1 class="title heading">Resume and Profile Building</h1>
-
-          <!-- <a target="_blank" href="https://www.youtube.com/channel/UCBOlJtDcWNh0aUkS2CfI8Aw">
-        <p>Link to Webinar</p>
-    </a> -->
-          <p>
-            A resume profile is a short summary of your work experience, skills, achievements, and goals. It's a
-            professional introduction to your resume and it shows off your best qualities and how they relate to a
-            specific job opening. A resume profile is essentially a short cover letter.
-            <br><br>
-            In today's scenario its important to showcase your skills in a way that gives you an edge over other
-            candidates. So building your resume and your online profile is an important task which should be given equal
-            weightage like we give on improving our skills.It is an important tool for your job search because it offers
-            a page or two where you can display your top skills and qualities. However, a resume is much more than that.
-            Resumes help employers make hiring decisions and help you get your first interview. That's why it matters
-            how you structure your resume and what information you decide to include.
-            <br><br>
-            Resumes, usually accompanied by customized cover letters, get sent to employers to determine your
-            eligibility and qualifications for a job. Employers use resumes to get a deeper understanding of candidate
-            skills, strengths and experience. Your resume should reflect achievements, awards, education, experience and
-            any other outstanding accomplishments that align with your career path and goals. Your resume is your first
-            point of contact with the employer and sets the tone for subsequent steps such as first interview, second
-            interview, pre-screening and on-boarding.
-            <br><br>
-            It was the honor of <strong> GirlScript Jamshedpur </strong> to have such an eminent
-        speaker and a worthy audience for the event.
-          </p>
-      </section>
-    </div>
-
-    <div class="mentorSection" id="2">
-      <div class="lv_heading_center" style="margin: 0;">
-        <div class="faq_content_wrapper">
-          <h1 class="heading" style="margin-top:30px;font-family: 'Bebas Neue', cursive;font-size: 4rem;">
-            MENTOR</h1>
-        </div>
-      </div>
-    </div>
-    <div class="cards">
-      <div class="profileCard">
-        <div class="cardHeader">
-          <div class="pic">
-            <img src="../images/mentors/Pooja Mishra.jfif" alt="mentor">
-          </div>
-          <div class="name">Pooja Mishra</div>
-          <div class="desc">Full Stack Developer</div>
-          <div class="icons">
-            <a href="https://www.linkedin.com/in/mpooja15/" target="_blank" class="fab fa-linkedin"></a>
-            <a href="https://twitter.com/poojam1507" target="_blank" class="fab fa-twitter"></a>
-            <a href="http://github.com/mPooja-15" target="_blank" class="fab fa-github"></a>
-          </div>
-        </div>
-        <div class="cardFooter">
-          <p style="margin: 0; padding: 0;">
-            She is a full stack web developer having over 2 years of experience.
-            She has sound knowledge in following technologies:
-            ✓ React JS 🌻/ Angular JS/ Vue JS / GraphQL / JQuery / Native Javascript
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <!-- Photos -->
-    <div class="photoSection" id="3">
-      <div class="lv_heading_center" style="margin: 0;">
-        <div class="faq_content_wrapper">
-          <h1 class="heading" style="margin-top:30px;font-family: 'Bebas Neue', cursive;font-size: 4rem;">
-            PHOTOS</h1>
-        </div>
-      </div>
-    </div>
-    <div class="imageContainer">
-      <div class="slider">
-        <div class="images">
-          <input type="radio" name="slide" id="img1" checked>
-          <input type="radio" name="slide" id="img2">
-          <input type="radio" name="slide" id="img3">
-          <input type="radio" name="slide" id="img4">
-          <input type="radio" name="slide" id="img5">
-
-          <img src="../images/event_photos/Resume and Profile Building/Pic01.png" class="m1" alt="img1">
-          <img src="../images/event_photos/Resume and Profile Building/Pic02.png" class="m2" alt="img2">
-          <img src="../images/event_photos/Resume and Profile Building/Pic03.png" class="m3" alt="img3">
-          <img src="../images/event_photos/Resume and Profile Building/Pic04.png" class="m4" alt="img4">
-          <img src="../images/event_photos/Resume and Profile Building/Pic05.png" class="m5" alt="img5">
-        </div>
-        <div class="dots">
-          <label for="img1"></label>
-          <label for="img2"></label>
-          <label for="img3"></label>
-          <label for="img4"></label>
-          <label for="img5"></label>
-        </div>
-      </div>
-    </div>
-
-
-
-    <!-- CSS for Photos -->
-
-    <style>
-      .imageContainer {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-      }
-
-      .slider {
-        position: relative;
-        width: 50%;
-        overflow: hidden;
-      }
-
-      .images {
-        display: flex;
-        width: 100%;
-      }
-
-      .images img {
-        height: 425px;
-        width: 100%;
-        transition: all 0.15s ease-in;
-      }
-
-      .images input {
-        display: none;
-      }
-
-      .dots {
-        display: flex;
-        justify-content: center;
-        margin: 5px;
-      }
-
-      .dots label {
-        height: 20px;
-        width: 20px;
-        border-radius: 50%;
-        border: solid #2e2e2a 3px;
-        cursor: pointer;
-        transition: all 0.15s ease-in;
-        margin: 5px;
-      }
-
-      .dots label:hover {
-        background: #2e2e2a;
-      }
-
-      #img1:checked~.m1 {
-        margin-left: 0;
-      }
-
-      #img2:checked~.m2 {
-        margin-left: -100%;
-      }
-
-      #img3:checked~.m3 {
-        margin-left: -200%;
-      }
-
-      #img4:checked~.m4 {
-        margin-left: -300%;
-      }
-      #img5:checked~.m5 {
-        margin-left: -400%;
-      }
-
-      @media screen and (max-width: 600px) {
-        .slider {
-          position: relative;
-          width: 90%;
-          overflow: hidden;
-        }
-
-        .images img {
-          height: 350px;
-          width: 100%;
-          transition: all 0.15s ease-in;
-        }
-      }
-    </style>
-
-
-
-
-    <!-- CSS for Mentor Sction -->
-
-    <style>
-      .cards {
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 2em;
-      }
-
-      .profileCard {
-        width: 400px;
-        text-align: center;
-        border-radius: 10px;
-        overflow: hidden;
-        box-shadow: 0 0 15px 0 rgba(0, 0, 0, .35);
-      }
-
-      .cardHeader {
-        background: #2c3a47;
-        padding: 40px 40px;
-        overflow: hidden;
-      }
-
-      .pic {
-        display: inline-block;
-        padding: 8px;
-        background: linear-gradient(130deg, #74b9ff, #e66767);
-        margin: auto;
-        border-radius: 50%;
-        background-size: 200% 200%;
-        animation: animated-gradient 2s linear infinite;
-      }
-
-      @keyframes animated-gradient {
-        25% {
-          background-position: left bottom;
-        }
-
-        50% {
-          background-position: right bottom;
-        }
-
-        75% {
-          background-position: right top;
-        }
-
-        100% {
-          background-position: left top;
-        }
-      }
-
-      .pic img {
-        display: block;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-      }
-
-      .name {
-        color: #f2f2f2;
-        font-size: 28px;
-        font-weight: 600;
-        margin: 10px 0;
-      }
-
-      .desc {
-        font-size: 18px;
-        margin-top: 20px;
-        color: #e66767;
-      }
-
-      .icons {
-        display: flex;
-        justify-content: center;
-        margin-top: 30px;
-      }
-
-      .icons img {
-        background: white;
-        transition: .3s linear;
-      }
-
-      .icons a {
-        color: #f2f2f2;
-        width: 56px;
-        font-size: 22px;
-        transition: .3s linear;
-      }
-
-      .icons img:hover {
-        background: #e66767;
-      }
-
-      .icons a:hover {
-        color: #e66767;
-      }
-
-      .cardFooter {
-        background: #f4f4f4;
-        padding: 60px 10px;
-        color: #e66767;
-      }
-    </style>
-
-
-</body>
-
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
