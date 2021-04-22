@@ -1,108 +1,544 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
 <head>
-    <meta charset="utf-8"/>
+    <meta charset="utf-8" />
     <!-- Required meta tags -->
-    <meta charset="utf-8"/>
-    <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet" />
+    <!-- Style Link -->
+    <link rel="stylesheet" type="text/css" href="../css/style_updated_site.css" />
+    <link rel="stylesheet" type="text/css" href="../css/animate.css" />
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="../css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="../css/owl.carousel.css" />
+    <link rel="stylesheet" type="text/css" href="../css/owl.theme.default.css" />
+    <link rel="stylesheet" type="text/css" href="../css/magnific-popup.css" />
+    <link rel="stylesheet" type="text/css" href="../css/fonts.css" />
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-            crossorigin="anonymous"
-    />
-    <link
-            href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
-            rel="stylesheet"
-    />
+        href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat:wght@600&family=Lobster+Two:ital@1&family=Piedra&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+    <!-- favicon links -->
+    <link rel="shortcut icon" type="image/icon" href="../images/header/favicon.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" />
+    <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+
+
+
     <title>How to Ace an Interview</title>
 </head>
 <style media="screen">
     :root {
-        --font-color: #3dd03c;
+        --font-color: black;
         --bg-color: #2e2e2a;
-        --bg-inverse-color: #ffffff;
+        --bg-inverse-color: #ddd;
+        --gradient: linear-gradient(45deg,
+                #845ec2,
+                #d65db1,
+                #ff6f91,
+                #ff9671,
+                #ffc75f,
+                #f9f871);
     }
 
     body {
-        background-color: var(--bg-color);
-        color: var(--font-color);
-        font-family: "Source Code Pro", monospace;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 1em;
+        line-height: 1.6;
+        color: #333;
+        background: white;
+
+        background-position: center;
     }
 
-    p::before {
-        content: ">> ";
+    .content {
+        margin-top: 7em;
+    }
+
+    .heading {
+        margin: 0 0 0.5em;
+        text-transform: uppercase;
+        font-weight: 900;
+        font-style: italic;
+        line-height: auto;
+        background-image: var(--gradient);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .title::before {
+        content: open-quote;
+    }
+
+    .title::after {
+        content: close-quote;
+    }
+
+    @media screen and (max-width: 600px) {
+        .title {
+            font-size: 25px;
+        }
+
+        .box {
+            width: 90%;
+            margin: 0;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .lv_header_wrapper .lv_menu_btn {
+            display: none;
+        }
+
+        .lv_header_wrapper .responsive_main_logo {
+            margin-left: 46px;
+        }
+
+    }
+
+    p {
+        padding: 10px;
+    }
+
+
+
+    span {
+        font-weight: 900;
+    }
+
+    span::before {
+        content: open-quote;
+    }
+
+    span::after {
+        content: close-quote;
     }
 
     /* loading dots */
 
     .loading:after {
         content: " .";
-        animation: dots 2s steps(5, end) infinite;
+        animation: dots 1s steps(5, end) infinite alternate-reverse;
     }
 
     @keyframes dots {
+
         0%,
         20% {
             color: var(--font-color);
             text-shadow: 1em 0 0 var(--font-color), 2em 0 0 var(--font-color);
         }
+
         40% {
             color: var(--bg-inverse-color);
             text-shadow: 1em 0 0 var(--font-color), 2em 0 0 var(--font-color);
         }
+
         60% {
             text-shadow: 1em 0 0 var(--bg-inverse-color), 2em 0 0 var(--font-color);
         }
+
         80%,
         100% {
             text-shadow: 1em 0 0 var(--bg-inverse-color),
-            2em 0 0 var(--bg-inverse-color);
+                2em 0 0 var(--bg-inverse-color);
         }
     }
 </style>
-<body>
-<main>
-    <h1>HOW TO ACE AN INTERVIEW</h1>
-    <p class="loading">This event is NO longer Active</p>
-    <p>Date: 29th November, 2020 </p>
-    <a target="_blank" href="https://www.youtube.com/channel/UCBOlJtDcWNh0aUkS2CfI8Aw">
-        <p>Link to Webinar</p>
-    </a>
-    <p>Event Report : <br><br>
-       &nbsp; Well if there would be a line to describe this event, then it would simply be "CONFIDENCE: THE CROWNED FEATURE IN ONE'S PERSONALITY" because the tips and the guidance provided by our guest speaker Mrs. Prashasti Pritiprada, Director of HR at Muvi.com and a Human Resource specialist completely illustrated how important confidence is and how to keep maintaining it in a steady flow!<br><br>
-       Remember that iconic hair flip that the leading lady does in every millennial movie and walks away from all the negative energies and vibes from her life. Yes! That amount of confidence is required to rock an interview.<br>
-       Confidence is like the crowning feature in one's personality. It is the first factor which gets noticed in someone.<br>
-       Hence, when you sit for an interview, make sure you own that!!!<br><br>
-       So, therefore, starting from confidently presenting yourself to making a professional impression everything was utterly addressed with utmost perfection and precision by our respected speaker. For example:- More often or not, you will be continually competing with others and some can be way older than you. But no worries! Never feel like you are the lesser one and you have less learning than the person and then start losing hope in doing the work. You can always outrun them and all you need for doing that is having proper knowledge and knowing the way to apply it.<br><br>
-       Similarly, "What type of behaviour would be the perfect one to showcase in front of the interviewer so that it reflects a smart side of yours?". The answer to this would be, simply to keep yourself together and calm. Portray the right body language such as maintaining a normal face with a minimal amount of emotions. That way it will show them that you want the job for sure but with a proper personality and confidence.<br><br>
-       Besides, various more ideas, thoughts, strategies, and plans were stated which made us believe that no matter what, if you give your best efforts combined with smart work then nothing can stop you from acing an interview.<br><br>
-       It was the honor of GirlScript Jamshedpur to have such an eminent speaker and a worthy audience for the event. <br>
-    </p>
-</main>
 
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script
-        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"
-></script>
-<script
-        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"
-></script>
-<script
-        src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"
-></script>
+<body>
+
+    <!-- Header -->
+
+    <div data-scroll-index="0" style="width:100%;float:center;">
+        <div class="lv_header_wrapper" style="position: fixed; box-shadow: 0 0 15px 0 rgba(0, 0, 0, .35); z-index: 2;">
+            <div class="lv_img_overlay"></div>
+            <div class="lv_top_header_wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <div class="responsive_main_logo">
+                                <img src="../images/header/Jamshedpur.png" alt="Logo" title="GirlScript Logo"
+                                    height="70"
+                                    style="position:relative; margin-left: auto; margin-right: auto; float: left; ">
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                            <button class="lv_menu_btn" style="position: absolute;"><i class="fa fa-bars"
+                                    aria-hidden="true"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lv_bottom_header_wrapper">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-2 col-md-2 col-sm-12 col-xs-12">
+                            <div class="event_logo_wrapper">
+                                <div class="logo_wrapper">
+                                    <img src="../images/header/Jamshedpur.png" alt="Logo" title="GirlScript Logo"
+                                        height="103">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                            <div class="lv_mainmenu_wrapper">
+                                <div class="lv_main_menu_wrapper">
+                                    <div class="lv_main_menu lv_single_index_menu">
+                                        <div class="logo_wrapper_inside">
+                                            <img src="images/header/Jamshedpur.png" alt="Logo" title="GirlScript Logo"
+                                                height="103">
+                                        </div>
+                                        <div class="line-which-is-straight"></div>
+                                        <ul>
+                                            <li><a href=#1> ABOUT</a></li>
+                                            <li><a href="#2"> MENTOR</a></li>
+                                            <li><a href="#3"> PHOTOS</a></li>
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Header End -->
+
+        <div class="content" id="1" style="margin-top: 150px;">
+            <section class="box">
+                <div class="container p-3 myDiv">
+                    <div class="lv_heading_center" style="margin: 0;">
+                        <div class="faq_content_wrapper">
+                            <h1 class="heading"
+                                style="margin-top:30px;font-family: 'Bebas Neue', cursive;font-size: 4rem">About</h1>
+                        </div>
+                    </div>
+                    <h1 class="title heading">HOW TO ACE AN Interview</h1>
+
+                    <!-- <a target="_blank" href="https://www.youtube.com/channel/UCBOlJtDcWNh0aUkS2CfI8Aw">
+        <p>Link to Webinar</p>
+    </a> -->
+                    <p>
+                        <br /><br />
+                        Well if there would be a line to describe this event, then it would simply be "CONFIDENCE:
+                        THE CROWNED FEATURE IN ONE'S PERSONALITY" because the tips and the guidance provided by our
+                        guest speaker Mrs.
+                        Prashasti Pritiprada, Director of HR at Muvi.com and a Human Resource specialist completely
+                        illustrated how important
+                        confidence is and how to keep maintaining it in a steady flow!
+                        <br /><br />
+                        Remember that iconic hair flip that the leading lady does in every millennial movie and walks
+                        away from all the
+                        negative energies and vibes from her life. Yes! That amount of confidence is required to rock an
+                        interview.
+                        Confidence is like the crowning feature in one's personality. It is the first factor which gets
+                        noticed in someone.
+                        Hence, when you sit for an interview, make sure you own that!!! <br /><br />
+
+                        So, therefore, starting from confidently presenting yourself to making a professional impression
+                        everything was utterly addressed with utmost perfection and precision by our respected speaker.
+                        For example:- More often or not, you will be continually competing with others and some can be
+                        way older than you. But no worries! Never feel like you are the lesser one and you have less
+                        learning than the person and then start losing hope in doing the work. You can always outrun
+                        them and all you need for doing that is having proper knowledge and knowing the way to apply it.
+                        <br />
+                        <br />
+                        Similarly, "What type of behaviour would be the perfect one to showcase in front of the
+                        interviewer so that it reflects a smart side of yours?". The answer to this would be, simply to
+                        keep yourself together and calm. Portray the right body language such as maintaining a normal
+                        face with a minimal amount of emotions. That way it will show them that you want the job for
+                        sure but with a proper personality and confidence.
+                        <br><br>
+                        Besides, various more ideas, thoughts, strategies, and plans were stated which made us believe
+                        that no matter what, if you give your best efforts combined with smart work then nothing can
+                        stop you from acing an interview
+                        <br><br>
+
+                        It was the honor of <strong> GirlScript Jamshedpur </strong> to have such an eminent
+                        speaker and a worthy audience for the event.
+                    </p>
+            </section>
+        </div>
+
+        <div class="mentorSection" id="2">
+            <div class="lv_heading_center" style="margin: 0;">
+                <div class="faq_content_wrapper">
+                    <h1 class="heading" style="margin-top:30px;font-family: 'Bebas Neue', cursive;font-size: 4rem;">
+                        MENTOR</h1>
+                </div>
+            </div>
+        </div>
+        <div class="cards">
+            <div class="profileCard">
+                <div class="cardHeader">
+                    <div class="pic">
+                        <img src="../images/mentors/Prashasti Pritiprada.jpg" alt="mentor">
+                    </div>
+                    <div class="name">Prashasti Pritiprada</div>
+                    <div class="desc">Director of HR at Muvi.com</div>
+                    <div class="icons">
+                        <a href="https://www.linkedin.com/in/prashasti-pritiprada-9086b3b4/" target="_blank"
+                            class="fab fa-linkedin"></a>
+                        <a href="https://twitter.com/shanuprity" target="_blank"
+                            class="fab fa-twitter"></a>                        
+                    </div>
+                </div>
+                <div class="cardFooter">
+                    <p style="margin: 0; padding: 0;">
+                        A Human resource specialist with experience in 360 degree HR terminology, starting from
+                        recruitment to employee engagement, critical situation handling with generalist role.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Photos -->
+        <div class="photoSection" id="3">
+            <div class="lv_heading_center" style="margin: 0;">
+                <div class="faq_content_wrapper">
+                    <h1 class="heading" style="margin-top:30px;font-family: 'Bebas Neue', cursive;font-size: 4rem;">
+                        PHOTOS</h1>
+                </div>
+            </div>
+        </div>
+        <div class="imageContainer">
+            <div class="slider">
+                <div class="images">
+                    
+
+                    <img src="../images/content/confidence in the workplace.jpg" class="m1" alt="img1">
+                    
+                </div>
+                
+            </div>
+        </div>
+
+
+
+        <!-- CSS for Photos -->
+
+        <style>
+            .imageContainer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            }
+
+            .slider {
+                position: relative;
+                width: 50%;
+                overflow: hidden;
+            }
+
+            .images {
+                display: flex;
+                width: 100%;
+            }
+
+            .images img {
+                height: auto;
+                width: 100%;
+                transition: all 0.15s ease-in;
+                margin-bottom: 20px;
+            }
+
+            .images input {
+                display: none;
+            }
+
+            .dots {
+                display: flex;
+                justify-content: center;
+                margin: 5px;
+            }
+
+            .dots label {
+                height: 20px;
+                width: 20px;
+                border-radius: 50%;
+                border: solid #2e2e2a 3px;
+                cursor: pointer;
+                transition: all 0.15s ease-in;
+                margin: 5px;
+            }
+
+            .dots label:hover {
+                background: #2e2e2a;
+            }
+
+            #img1:checked~.m1 {
+                margin-left: 0;
+            }
+
+            #img2:checked~.m2 {
+                margin-left: -100%;
+            }
+
+            #img3:checked~.m3 {
+                margin-left: -200%;
+            }
+
+            #img4:checked~.m4 {
+                margin-left: -300%;
+            }
+
+            @media screen and (max-width: 600px) {
+                .slider {
+                    position: relative;
+                    width: 90%;
+                    overflow: hidden;
+                }
+
+                .images img {
+                    height: 350px;
+                    width: 100%;
+                    transition: all 0.15s ease-in;
+                }
+            }
+        </style>
+
+
+
+
+        <!-- CSS for Mentor Sction -->
+
+        <style>
+            .cards {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 2em;
+            }
+
+            .profileCard {
+                width: 400px;
+                text-align: center;
+                border-radius: 10px;
+                overflow: hidden;
+                box-shadow: 0 0 15px 0 rgba(0, 0, 0, .35);
+            }
+
+            .cardHeader {
+                background: #2c3a47;
+                padding: 40px 40px;
+                overflow: hidden;
+            }
+
+            .pic {
+                display: inline-block;
+                padding: 8px;
+                background: linear-gradient(130deg, #74b9ff, #e66767);
+                margin: auto;
+                border-radius: 50%;
+                background-size: 200% 200%;
+                animation: animated-gradient 2s linear infinite;
+            }
+
+            @keyframes animated-gradient {
+                25% {
+                    background-position: left bottom;
+                }
+
+                50% {
+                    background-position: right bottom;
+                }
+
+                75% {
+                    background-position: right top;
+                }
+
+                100% {
+                    background-position: left top;
+                }
+            }
+
+            .pic img {
+                display: block;
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+            }
+
+            .name {
+                color: #f2f2f2;
+                font-size: 28px;
+                font-weight: 600;
+                margin: 10px 0;
+            }
+
+            .desc {
+                font-size: 18px;
+                margin-top: 20px;
+                color: #e66767;
+            }
+
+            .icons {
+                display: flex;
+                justify-content: center;
+                margin-top: 30px;
+            }
+
+            .icons img {
+                background: white;
+                transition: .3s linear;
+            }
+
+            .icons a {
+                color: #f2f2f2;
+                width: 56px;
+                font-size: 22px;
+                transition: .3s linear;
+            }
+
+            .icons img:hover {
+                background: #e66767;
+            }
+
+            .icons a:hover {
+                color: #e66767;
+            }
+
+            .cardFooter {
+                background: #f4f4f4;
+                padding: 60px 10px;
+                color: #e66767;
+            }
+        </style>
+
+
 </body>
+
 </html>
