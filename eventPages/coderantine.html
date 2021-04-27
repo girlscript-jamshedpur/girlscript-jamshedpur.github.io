@@ -320,6 +320,54 @@
     </div>
 
 
+    <div class="cards">
+      <div class="profileCard">
+        <div class="cardHeader">
+          <div class="pic">
+            <img src="../images/speakers/Jayanti Sharma (2).jfif" alt="mentor">
+          </div>
+          <div class="name">Jayanti Sharma</div>
+          <div class="desc">Full Stack Developer</div>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/imjayanti/" target="_blank" class="fab fa-linkedin"></a>
+
+          </div>
+        </div>
+        <div class="cardFooter">
+          <p style="margin: 0; padding: 0;">
+            She is a Software Developer Engineer 👩‍💻 working with Microsoft technologies.
+            In 2020, she founded an Indian dev community on twitter (@DevComIN) as an initiative to Connect-Learn-Share
+            with #TechTwitter 🙌.
+            <br><br>
+          </p>
+        </div>
+      </div>
+
+      <div class="profileCard">
+        <div class="cardHeader">
+          <div class="pic">
+            <img src="../images/speakers/Pratham.jfif" alt="mentor">
+          </div>
+          <div class="name">Pratham</div>
+          <div class="desc">Front-end developer</div>
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/pratham-abb051175/" target="_blank" class="fab fa-linkedin"></a>
+
+          </div>
+        </div>
+        <div class="cardFooter">
+          <p style="margin: 0; padding: 0;">
+            Experienced Team Lead with a demonstrated history of working in the e-learning industry. Skilled in C++,
+            Java Swing, C (Programming Language), Machine Learning, and Database Management System (DBMS). 
+            <br><br>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+
+
 
 
     <!-- Photos -->
@@ -333,21 +381,19 @@
     <div class="imageContainer">
       <div class="slider">
         <div class="images">
-          <input type="radio" name="slide" id="img1" checked>
-          <input type="radio" name="slide" id="img2">
-          <input type="radio" name="slide" id="img3">
-          <input type="radio" name="slide" id="img4">
 
-          <img src="../images/event_photos/Coderantine/c++-01.png" class="m1" alt="img1">
-          <img src="../images/event_photos/Coderantine/html-01.png" class="m2" alt="img2">
-          <img src="../images/event_photos/Coderantine/python-01.png" class="m3" alt="img3">
-          <img src="../images/event_photos/Coderantine/tmdm-01.png" class="m4" alt="img4">
+          <img class="photo" src="../images/event_photos/Coderantine/c++-01.png">
+          <img class="photo" src="../images/event_photos/Coderantine/html-01.png">
+          <img class="photo" src="../images/event_photos/Coderantine/python-01.png">
+          <img class="photo" src="../images/event_photos/Coderantine/tmdm-01.png">
+
+
         </div>
-        <div class="dots">
-          <label for="img1"></label>
-          <label for="img2"></label>
-          <label for="img3"></label>
-          <label for="img4"></label>
+        <div onclick="side_slide(-1)" class="slide left">
+          <span class="fas fa-angle-left"></span>
+        </div>
+        <div onclick="side_slide(1)" class="slide right">
+          <span class="fas fa-angle-right"></span>
         </div>
       </div>
     </div>
@@ -362,21 +408,23 @@
         justify-content: center;
         align-items: center;
         width: 100%;
+        margin-bottom: 20px;
       }
 
       .slider {
-        position: relative;
-        width: 50%;
+        height: 400px;
+        width: 750px;
         overflow: hidden;
+        position: relative;
       }
 
       .images {
-        display: flex;
+        height: 100%;
         width: 100%;
       }
 
       .images img {
-        height: 750px;
+        height: 100%;
         width: 100%;
         transition: all 0.15s ease-in;
       }
@@ -385,41 +433,35 @@
         display: none;
       }
 
-      .dots {
-        display: flex;
-        justify-content: center;
-        margin: 5px;
-      }
-
-      .dots label {
-        height: 20px;
-        width: 20px;
-        border-radius: 50%;
-        border: solid #2e2e2a 3px;
+      .slider .slide {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 45px;
+        text-align: center;
+        border: 2px solid coral;
         cursor: pointer;
-        transition: all 0.15s ease-in;
-        margin: 5px;
+
       }
 
-      .dots label:hover {
-        background: #2e2e2a;
+      .slider .slide:hover {
+        background: burlywood;
       }
 
-      #img1:checked~.m1 {
-        margin-left: 0;
+      .slide span {
+        font-size: 35px;
+        line-height: 41px;
+        color: #e66767;
+
+
       }
 
-      #img2:checked~.m2 {
-        margin-left: -100%;
+      .slider .right {
+        right: 0;
       }
 
-      #img3:checked~.m3 {
-        margin-left: -200%;
-      }
 
-      #img4:checked~.m4 {
-        margin-left: -300%;
-      }
+
 
       @media screen and (max-width: 600px) {
         .slider {
@@ -435,6 +477,31 @@
         }
       }
     </style>
+
+    <!-- Script for Slider -->
+
+    <script>
+      var indexValue = 1;
+      showImg(indexValue);
+      function side_slide(e) { showImg(indexValue += e); }
+
+      function showImg(e) {
+        var i;
+        const img = document.querySelectorAll(".photo");
+        if (e > img.length) {
+          indexValue = 1;
+        }
+        if (e < 1) {
+          indexValue = img.length;
+        }
+        for (i = 0; i < img.length; i++) {
+          img[i].style.display = "none";
+        }
+        console.log(indexValue)
+        img[indexValue - 1].style.display = "block"
+
+      }
+    </script>
 
 
 

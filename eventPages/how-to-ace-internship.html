@@ -316,108 +316,131 @@
     </div>  
     </div>
     <div class="imageContainer">
-    <div class="slider">
-    <div class="images">
-      <input type="radio" name="slide" id="img1" checked>
-      <input type="radio" name="slide" id="img2">
-      <input type="radio" name="slide" id="img3">
-      <input type="radio" name="slide" id="img4">
+      <div class="slider">
+        <div class="images">          
 
-      <img src="../images/event_photos/Python_1.jpg" class="m1" alt="img1">
-      <img src="../images/event_photos/Python_2.jpg" class="m2" alt="img2">
-      <img src="../images/event_photos/Python_3.jpg" class="m3" alt="img3">
-      <img src="../images/event_photos/Python_4.jpg" class="m4" alt="img4">
+          <img class="photo" src="../images/event_photos/Python_1.jpg" >
+          <img class="photo" src="../images/event_photos/Python_2.jpg" >
+          <img class="photo" src="../images/event_photos/Python_3.jpg" >
+          <img class="photo" src="../images/event_photos/Python_4.jpg" >
+          
+                 
+          
+        </div> 
+        <div onclick="side_slide(-1)" class="slide left">
+          <span class="fas fa-angle-left"></span>
+        </div>
+        <div onclick="side_slide(1)" class="slide right">
+          <span class="fas fa-angle-right"></span>
+        </div>       
+      </div>
     </div>
-    <div class="dots">
-      <label for="img1"></label>
-      <label for="img2"></label>
-      <label for="img3"></label>
-      <label for="img4"></label>
-    </div>
-    </div>
-  </div>
 
 
-    
+
     <!-- CSS for Photos -->
 
     <style>
-      .imageContainer{
+      .imageContainer {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
+        margin-bottom: 20px;
       }
 
-      .slider{
-        position: relative;
-        width: 50%;
+      .slider {
+        height: 400px;
+        width: 750px;
         overflow: hidden;
+        position: relative;
       }
-      
-      .images{
-        display: flex;
+
+      .images {
+        height: 100%;
         width: 100%;
       }
 
-      .images img{
-        height: 425px;
-        width: 100%;        
+      .images img {
+        height: 100%;
+        width: 100%;
         transition: all 0.15s ease-in;
       }
 
-      .images input{
+      .images input {
         display: none;
       }
 
-      .dots{
-        display: flex;
-        justify-content: center;
-        margin: 5px;
+     .slider .slide{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 45px;
+        text-align: center;
+        border: 2px solid coral;
+        cursor: pointer;  
+        
       }
 
-      .dots label{
-        height: 20px;
-        width: 20px;
-        border-radius: 50%;
-        border: solid #2e2e2a 3px;
-        cursor: pointer;
-        transition: all 0.15s ease-in;
-        margin: 5px;
+      .slider .slide:hover{
+        background: burlywood;
       }
 
-      .dots label:hover{
-        background: #2e2e2a;
+      .slide span{
+        font-size: 35px;
+        line-height: 41px;
+        color: #e66767;
+        
+
       }
 
-      #img1:checked ~ .m1{
-        margin-left: 0;
+      .slider .right{
+        right: 0;
       }
-      #img2:checked ~ .m2{
-        margin-left: -100%;
-      }
-      #img3:checked ~ .m3{
-        margin-left: -200%;
-      }
-      #img4:checked ~ .m4{
-        margin-left: -300%;
-      }
+
+      
+     
 
       @media screen and (max-width: 600px) {
-        .slider{
-        position: relative;
-        width: 90%;
-        overflow: hidden;        
-      }
+        .slider {
+          position: relative;
+          width: 90%;
+          overflow: hidden;
+        }
 
-      .images img{
-        height: 350px;
-        width: 100%;        
-        transition: all 0.15s ease-in;
+        .images img {
+          height: 350px;
+          width: 100%;
+          transition: all 0.15s ease-in;
+        }
       }
-      }
-
     </style>
+
+    <!-- Script for Slider -->
+
+    <script>
+      var indexValue = 1;
+      showImg(indexValue);
+      function side_slide(e){showImg(indexValue += e);}
+
+      function showImg(e){
+        var i ;
+        const img = document.querySelectorAll(".photo");
+        if(e> img.length){
+          indexValue = 1;
+        }
+        if(e < 1){
+          indexValue = img.length;
+        }
+        for(i = 0; i < img.length; i++)
+        {
+          img[i].style.display = "none";
+        }
+        console.log(indexValue)
+        img[indexValue - 1].style.display = "block"
+
+      }
+    </script>
 
 
 
