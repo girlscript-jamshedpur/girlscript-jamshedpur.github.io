@@ -47,7 +47,7 @@
 </head>
 <style media="screen">
   :root {
-    --font-color: black;
+    --font-color: #333;
     --bg-color: #2e2e2a;
     --bg-inverse-color: #ddd;
     --gradient: linear-gradient(45deg,
@@ -57,6 +57,14 @@
         #ff9671,
         #ffc75f,
         #f9f871);
+    --bg-body: white;
+    
+
+  }
+
+  .darkMode{
+    --bg-body: #0d1117;
+    --font-color: white;
   }
 
   body {
@@ -67,9 +75,8 @@
     align-items: center;
     font-size: 1em;
     line-height: 1.6;
-    color: #333;
-    background: white;
-
+    color: var(--font-color);
+    background: var(--bg-body);
     background-position: center;
   }
 
@@ -609,5 +616,32 @@
 
 
 </body>
+<script defer type="text/javascript">
+  let darkMode = localStorage.getItem("dark-mode");
+  let bd = document.body;
+  let box = document.querySelector(".box");
+  let card = document.querySelectorAll(".profileCard")
+  let images = document.querySelector(".images");
+
+  
+  console.log(bd);
+  console.log(darkMode)
+  if(darkMode === "enabled")
+  {
+    bd.classList.add("darkMode");
+    box.style.background = "black";
+    for(let i=0; i<card.length;i++){
+    card[i].style.boxShadow = "0 0 5px 3px rgb(89 188 235 / 75%)"
+    }
+  }
+  // all 0.5s ease-in-out;
+  // 0 0 15px 0 rgb(0 0 0 / 35%)
+  else{
+    bd.classList.remove("darkMode");
+    box.style.background = "";
+    card.style.boxShadow= "0 0 15px 0 rgb(0 0 0 / 35%)";
+  }
+
+</script>
 
 </html>
