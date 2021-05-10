@@ -11,6 +11,9 @@
 
 .colorSwitch{
     margin: 0;
+    font-family: 'Lato', sans-serif;
+    color: #3C3C3C;
+    font-weight: 500;
 }
 
 .whiteColorText{
@@ -20,9 +23,22 @@
 
 
 .colorSwitch::before{
-    content: "DARK MODE";
-    color: #3c3c3c;
+    content: "DARK MODE";  
+    
         
+}
+@media screen and (max-width: 600px){
+    .colorSwitch{
+        color: #EE7723;
+        background: #fff5f4;
+    }
+    .colorSwitch::before{
+        background: #fff5f4;
+    }
+
+    .bg{
+        background: #fff5f4;
+    }
 }
 
 .colorSwitch:hover::before{    
