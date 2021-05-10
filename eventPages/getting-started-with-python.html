@@ -41,13 +41,24 @@
     crossorigin="anonymous" />
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
+ 
 
 
   <title>Getting started with Python</title>
 </head>
+
 <style media="screen">
+
+html.transition,
+html.transition *,
+html.transition *::before,
+html.transition *::after{
+    transition: all 750ms !important;
+    transition-delay: 0 !important;
+} 
+
   :root {
-    --font-color: black;
+    --font-color: #333;
     --bg-color: #2e2e2a;
     --bg-inverse-color: #ddd;
     --gradient: linear-gradient(45deg,
@@ -57,6 +68,14 @@
         #ff9671,
         #ffc75f,
         #f9f871);
+    --bg-body: white;
+    
+
+  }
+
+  .darkMode{
+    --bg-body: #0d1117;
+    --font-color: white;
   }
 
   body {
@@ -67,9 +86,8 @@
     align-items: center;
     font-size: 1em;
     line-height: 1.6;
-    color: #333;
-    background: white;
-
+    color: var(--font-color);
+    background: var(--bg-body);
     background-position: center;
   }
 
@@ -246,13 +264,13 @@
     </a> -->
           <p>
             <br /><br />
-            We are very pleased to share the report from <strong> Girlscript Jamshedpur </strong> on the outcome of the online bootcamp
-            session on "Getting started with python" organised by <strong> Girlscript Jamshedpur </strong> at WebEx meet on 17th (6 p.m to
-            7 p.m) and 18th April (6 p.m to 7:14 p.m) was a successful one with our mentor <strong> Shambhavi Gupta </strong> who is an
+            We are very pleased to share the report from <strong style="color: #797979;"> Girlscript Jamshedpur </strong> on the outcome of the online bootcamp
+            session on "Getting started with python" organised by <strong style="color: #797979;"> Girlscript Jamshedpur </strong> at WebEx meet on 17th (6 p.m to
+            7 p.m) and 18th April (6 p.m to 7:14 p.m) was a successful one with our mentor <strong style="color: #797979;"> Shambhavi Gupta </strong> who is an
             instructor at Udemy python programming and a data science enthusiast. She is a brilliant teacher and very
             professional. Also the way she interacted with our attendees, grabbing out everyone interest was
             outstanding. <br><br>
-          <strong><em> Python </em> </strong> is widely used , high - level , general purpose , interpreted , dynamic programming language in
+          <strong style="color: #797979;"><em> Python </em> </strong> is widely used , high - level , general purpose , interpreted , dynamic programming language in
             today's world .The bootcamp event on Python was very helpful for the candidates . <br><br>
             On 17th April Saturday session was started by very nice introduction of about our organisation and our
             mentor by Zuneha Khanam (member of Management team ) and Divyansh Sinha (Web Developer).
@@ -281,7 +299,7 @@
             * What can we do with python ?
             * Python importance in today's world .
             * Why python is most widely used than other programming language? <br><br>
-            Last but not the least <strong> Girlscript Jamshedpur </strong> would like give devote vote of thanks to all GirlScript members
+            Last but not the least <strong style="color: #797979;"> Girlscript Jamshedpur </strong> would like give devote vote of thanks to all GirlScript members
             , mentor Shambhavi Gupta and learners for making the session more interactive and bringing out a great
             success.
           </p>
@@ -567,5 +585,33 @@
 
 
 </body>
+
+<script defer type="text/javascript">
+  let darkMode = localStorage.getItem("dark-mode");
+  let bd = document.body;
+  let box = document.querySelector(".box");
+  let card = document.querySelectorAll(".profileCard")
+  let images = document.querySelector(".images");
+
+  
+  console.log(bd);
+  console.log(darkMode)
+  if(darkMode === "enabled")
+  {
+    bd.classList.add("darkMode");
+    box.style.background = "black";
+    for(let i=0; i<card.length;i++){
+    card[i].style.boxShadow = "0 0 5px 3px rgb(89 188 235 / 75%)"
+    }
+  }
+  // all 0.5s ease-in-out;
+  // 0 0 15px 0 rgb(0 0 0 / 35%)
+  else{
+    bd.classList.remove("darkMode");
+    box.style.background = "";
+    card.style.boxShadow= "0 0 15px 0 rgb(0 0 0 / 35%)";
+  }
+
+</script>
 
 </html>
