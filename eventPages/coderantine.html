@@ -41,6 +41,9 @@
     crossorigin="anonymous" />
   <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
 
+  <!-- Aos -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
 
 
   <title>Coderantine</title>
@@ -276,11 +279,11 @@
     <div class="mentorSection" id="2">
       <div class="lv_heading_center" style="margin: 0;">
         <div class="faq_content_wrapper">
-          <h1 class="heading" style="margin-top:30px;font-family: 'Bebas Neue', cursive;font-size: 4rem;">Speakers</h1>
+          <h1 data-aos="fade-up" data-aos-duration="500" class="heading" style="margin-top:30px;font-family: 'Bebas Neue', cursive;font-size: 4rem;">Speakers</h1>
         </div>
       </div>
     </div>
-    <div class="cards">
+    <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="200" class="cards">
       <div class="profileCard">
         <div class="cardHeader">
           <div class="pic">
@@ -383,11 +386,12 @@
     <div class="photoSection" id="3">
       <div class="lv_heading_center" style="margin: 0;">
         <div class="faq_content_wrapper">
-          <h1 class="heading" style="margin-top:30px;font-family: 'Bebas Neue', cursive;font-size: 4rem;">PHOTOS</h1>
+          <h1 data-aos="fade-up" data-aos-duration="500" data-aos-delay="250"
+          class="heading" style="margin-top:30px;font-family: 'Bebas Neue', cursive;font-size: 4rem;">PHOTOS</h1>
         </div>
       </div>
     </div>
-    <div class="imageContainer">
+    <div data-aos="fade-in" data-aos-duration="1000" data-aos-delay="500" class="imageContainer">
       <div class="slider">
         <div class="images">
 
@@ -625,6 +629,12 @@
         color: #e66767;
       }
     </style>
+
+<!-- Aos Script -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 
 
 </body>

@@ -20,7 +20,7 @@ Template Name: Live Event
         content="Girlscript, Jamshedpur, girlscript Jamshedpur, girlscript foundation, gsindia, gsjamshedpur,  girlscript foundation india">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
-    <!--style -->
+    <!--style -->d
     <link rel="stylesheet" href="./css/dark_mode.css">
     <link rel="stylesheet" type="text/css" href="css/style_updated_site.css" />
     <link rel="stylesheet" type="text/css" href="css/animate.css" />
@@ -50,6 +50,8 @@ Template Name: Live Event
     <script defer src="./js/dark_mode.js"></script>
     <!-- favicon links -->
     <link rel="shortcut icon" type="image/icon" href="images/header/favicon.png" />
+    <!-- Aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -168,7 +170,7 @@ Template Name: Live Event
     <div class="categories_sec_wrapper">
         <div class="container">
             <div class="row">
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12 " data-aos="fade-right" data-aos-duration="90000" data-aos-delay="200">
                     <div class="category1_wrapper">
                         <div class="category1">
                             <i class="fa fa-laptop fa-4x"></i>
@@ -179,7 +181,7 @@ Template Name: Live Event
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" data-aos="fade-right" data-aos-duration="90000" data-aos-delay="200">
                     <div class="category1_wrapper">
                         <div class="category1">
                             <i class="fa fa-female fa-4x"></i>
@@ -190,7 +192,7 @@ Template Name: Live Event
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" data-aos="fade-left" data-aos-duration="90000" data-aos-delay="200">
                     <div class="category1_wrapper">
                         <div class="category1">
                             <i class="fa fa-graduation-cap fa-4x"></i>
@@ -200,7 +202,7 @@ Template Name: Live Event
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12" data-aos="fade-left" data-aos-duration="90000" data-aos-delay="200">
                     <div class="category1_wrapper">
                         <div class="category1">
                             <i class="fa fa-code fa-4x"></i>
@@ -222,7 +224,7 @@ Template Name: Live Event
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2">
                     <div class="lv_heading_center">
                         <div class="faq_content_wrapper">
-                            <h1 style="margin-top:30px;font-family: 'Roboto', sans-serif;font-size: 4rem" class="textWhite">About
+                            <h1 style="margin-top:30px;font-family: 'Roboto', sans-serif;font-size: 4rem" class="textWhite" data-aos="fade-up" data-aos-duration="90000" data-aos-delay="50">About
                                 GirlScript</h1>
                         </div>
                     </div>
@@ -246,18 +248,18 @@ Template Name: Live Event
                                 style="color: black;" class="textWhite">Goals</b>:
                         </p>
 
-                        <ul style="padding-left: 15px;" class="textWhite">
+                        <ul  data-aos-delay="200" style="padding-left: 15px;" class="textWhite">
                             <li style="font-family: 'Libre Baskerville', serif;font-size:1.5rem">
                                 Encourage people to learn to program and make them capable of writing a simple computer
                                 program to building a complex system.
                             </li>
-                            <li style="font-family: 'Libre Baskerville', serif;font-size:1.5rem">Empower people
+                            <li data-aos-delay="100" style="font-family: 'Libre Baskerville', serif;font-size:1.5rem">Empower people
                                 by providing an opportunity to showcase their technical skills.
                             </li>
                             <li style="font-family: 'Libre Baskerville', serif;font-size:1.5rem">Provide a
                                 platform to individuals by hosting coding competition and tech events.
                             </li>
-                            <li style="font-family: 'Libre Baskerville', serif;font-size:1.5rem">
+                            <li  data-aos-delay="100"style="font-family: 'Libre Baskerville', serif;font-size:1.5rem">
                                 Share technical knowledge and content for helping individuals in the programming world.
                             </li>
                         </ul>
@@ -1142,6 +1144,12 @@ Template Name: Live Event
             },
         });
     </script>
+<!-- Aos -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 
 </html>
