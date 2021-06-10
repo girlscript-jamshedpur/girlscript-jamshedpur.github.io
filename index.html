@@ -421,7 +421,7 @@ Template Name: Live Event
                     <div class="col-sm-12">
                         <div class="section_title">
                             <div class="section_subtitle">
-                                <h1 class="text-center textWhite">Our Blogs</h1>
+                                <h1 class="text-center textWhite" data-aos="fade-up" data-aos-duration="90000" data-aos-delay="50">Our Blogs</h1>
                             </div>
                             <h2 class="textWhite">Recent <strong>Blogs</strong></h2>
                         </div>
@@ -613,7 +613,7 @@ Template Name: Live Event
     <!-- FAQ Wrapper Start -->
     <section data-scroll-index="3" class="section-tours-new" id="section-tours-new">
         <div class="u-center-text-new u-margin-bottom-big-new">
-            <h2 class="heading-secondary-new textWhite">
+            <h2 class="heading-secondary-new textWhite" data-aos="fade-up" data-aos-duration="90000" data-aos-delay="50">
                 Our Team
             </h2>
         </div>
@@ -782,19 +782,21 @@ Template Name: Live Event
     <!-- contact section end -->
 
     <!--Events Section-->
+    
     <div data-scroll-index="4" style="width:100%;float:left;">
         <div class="row lv_toppadder100">
             <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2">
                 <div class="lv_heading_center">
                     <div class="latest_news_wrapper">
-                        <h1 class="textWhite">Events</h1>
-                        <h2 class="textWhite">Past <strong>Events</strong></h2>
+                        <h1 class="textWhite" data-aos="fade-up" data-aos-duration="90000" data-aos-delay="50">Events</h1>
+                        <h2 class="textWhite" data-aos="fade-up" data-aos-duration="90000" data-aos-delay="100">Past <strong>Events</strong></h2>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+    <div class="eventContainer">
     <div>
         <section class="latest-event-area" id="events">
             <div class="container">
@@ -1045,11 +1047,33 @@ Template Name: Live Event
             </div>
         </section>
     </div>
+</div>
     <br><br><br><br>
 
     <!-- Internal CSS for Event Section -->
 
     <style>
+
+        .eventContainer{
+            display: flex;
+            justify-content: center;
+            width: 80vw;
+            margin-left: 10em;
+            flex-wrap: nowrap;
+            height: 700px;
+            overflow-y: scroll;
+            scroll-behavior: auto;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+            border: 2px solid dodgerblue;
+        }
+
+
+
+        .eventContainer::-webkit-scrollbar{
+            display: none;
+        }
+
         .media {
             width: 33%;
             overflow: unset;
@@ -1090,6 +1114,7 @@ Template Name: Live Event
                 width: 100%;
                 margin-top: 20px;
                 height: fit-content;
+                padding: 0;
             }
 
             .row {
@@ -1100,6 +1125,14 @@ Template Name: Live Event
                 height: fit-content;
             }
 
+        }
+
+        @media (max-width: 750px) {
+            .eventContainer{
+                width: 90vw;
+                margin-left: 1.2em;
+                height: 113vh;
+            }
         }
     </style>
 
