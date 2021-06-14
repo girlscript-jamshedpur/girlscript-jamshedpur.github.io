@@ -224,7 +224,7 @@ Template Name: Live Event
                 <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2">
                     <div class="lv_heading_center">
                         <div class="faq_content_wrapper">
-                            <h1 style="margin-top:30px;font-family: 'Roboto', sans-serif;font-size: 4rem" class="textWhite" data-aos="fade-up" data-aos-duration="90000" data-aos-delay="50">About
+                            <h1 style="margin-top:30px;font-family: 'Roboto', sans-serif;" class="textWhite aboutTitle" data-aos="fade-up" data-aos-duration="90000" data-aos-delay="50">About
                                 GirlScript</h1>
                         </div>
                     </div>
@@ -248,18 +248,18 @@ Template Name: Live Event
                                 style="color: black;" class="textWhite">Goals</b>:
                         </p>
 
-                        <ul  data-aos-delay="200" style="padding-left: 15px;" class="textWhite">
-                            <li style="font-family: 'Libre Baskerville', serif;font-size:1.5rem">
+                        <ul   data-aos-delay="200" style="padding-left: 15px;" class="textWhite">
+                            <li class="about-para" style="font-family: 'Libre Baskerville', serif;font-size:1.5rem">
                                 Encourage people to learn to program and make them capable of writing a simple computer
                                 program to building a complex system.
                             </li>
-                            <li data-aos-delay="100" style="font-family: 'Libre Baskerville', serif;font-size:1.5rem">Empower people
+                            <li class="about-para" data-aos-delay="100" style="font-family: 'Libre Baskerville', serif;font-size:1.5rem">Empower people
                                 by providing an opportunity to showcase their technical skills.
                             </li>
-                            <li style="font-family: 'Libre Baskerville', serif;font-size:1.5rem">Provide a
+                            <li class="about-para" style="font-family: 'Libre Baskerville', serif;font-size:1.5rem">Provide a
                                 platform to individuals by hosting coding competition and tech events.
                             </li>
-                            <li  data-aos-delay="100"style="font-family: 'Libre Baskerville', serif;font-size:1.5rem">
+                            <li class="about-para" data-aos-delay="100"style="font-family: 'Libre Baskerville', serif;font-size:1.5rem">
                                 Share technical knowledge and content for helping individuals in the programming world.
                             </li>
                         </ul>
@@ -282,6 +282,23 @@ Template Name: Live Event
             </div>
         </section>
     </div>
+
+    <style>
+       
+        @media (max-width: 450px) {
+
+            .aboutTitle{
+            font-size: 6vw !important;
+        }
+             .box{
+                 margin: 2em !important;
+             }
+             
+             .about-para{
+                font-size: 1em !important;
+             }
+        }
+    </style>
     <!-- About Girlscript End -->
 
     <!-- Team Gallry Wrapper Start -->
@@ -823,6 +840,36 @@ Template Name: Live Event
                         <div class="col-md-4 media">
                             <div class="latest-event-wrap">
                                 <div class="event-img">
+                                    <img src="./images/content/digital_marketing.png" class="img-responsive"
+                                        style="height: 310px; width: 100%">
+                                </div>
+                                <div class="event-content">
+                                    <div class="social">
+                                    <a href="https://twitter.com/girlscript_Jsr"><span class="fa fa-twitter"></span>
+                                    </a>
+                                    <a href="https://www.instagram.com/girlscript_jamshedpur/"><span
+                                            class="fa fa-instagram"></span> </a>
+                                    <a href="https://www.linkedin.com/company/girlscript-jamshedpur/"><span
+                                            class="fa fa-linkedin"></span> </a>
+                                    <a href="https://github.com/girlscript-jamshedpur"><span
+                                            class="fa fa-github"></span>
+                                    </a>
+                                </div>
+                                    <p>
+                                    <h1 class="textWhite">Digital Marketing with AI</h1>
+                                    A session on "Digital Marketing with AI" by  Gopaluni Sai Karthik 
+                                    </p><br>
+                                    <button class="btn btn-info"><a
+                                            href="eventPages/digital_marketing.html">Know
+                                            More</a></button>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-md-4 media">
+                            <div class="latest-event-wrap">
+                                <div class="event-img">
                                     <img src="./images/content/cs1.png" class="img-responsive"
                                         style="height: 310px; width: 100%">
                                 </div>
@@ -1073,8 +1120,8 @@ Template Name: Live Event
         .eventContainer{
             display: flex;
             justify-content: center;
-            width: 80vw;
-            margin-left: 10em;
+            width: 60vw;
+            margin: 0 auto;
             flex-wrap: nowrap;
             height: 700px;
             overflow-y: scroll;
@@ -1123,6 +1170,94 @@ Template Name: Live Event
             height: 97%;
         }
 
+        @media (max-width: 1900px){ 
+
+            .row{
+                margin-right: 0;
+                margin-left: 0;
+            }
+
+            .eventContainer{
+                width: 70vw;
+                margin: 0 auto;
+            }
+
+         }
+
+
+        @media (max-width: 1700px){ 
+
+            .row{
+                margin-right: 0;
+                margin-left: 0;
+            }
+
+            .eventContainer{
+                width: 80vw;
+                margin: 0 auto;
+            }
+
+        }
+
+
+        @media (max-width: 1400px)
+        {
+            .row{
+                margin-right: 0;
+                margin-left: 0;
+            }
+
+            .eventContainer{
+                width: 90vw;
+                margin: 0 auto;
+            }
+        }
+
+        @media (max-width: 1200px){
+            .event-active{
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+        }
+        
+
+        @media (max-width: 750px) {
+            .eventContainer{
+                width: 90vw;
+                margin-left: 1.2em;
+                height: 113vh;
+            }
+        }
+
+        @media (max-width: 991px){
+
+            .eventContainer{
+                margin: 0 auto;
+                width: 90vw;
+            }
+
+            .media{
+                width: 50%;
+                
+            }
+
+            .event-active{
+                display: flex;
+                flex-wrap: wrap;
+            }
+
+        }
+
+
+        @media (max-width: 911px){
+            .row{
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+
+      
 
 
         @media screen and (max-width: 600px) {
@@ -1141,14 +1276,6 @@ Template Name: Live Event
                 height: fit-content;
             }
 
-        }
-
-        @media (max-width: 750px) {
-            .eventContainer{
-                width: 90vw;
-                margin-left: 1.2em;
-                height: 113vh;
-            }
         }
     </style>
 
