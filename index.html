@@ -166,6 +166,36 @@ Template Name: Live Event
         </div>
     </div>
 
+    <!-- Video -->
+    <div id="myVideo">
+    <video id="video" src="./video/video.mp4" type="video/mp4" autoplay muted loop >
+        
+    </video>
+</div>  
+    <style>
+        #myVideo{  
+            margin-top: 55em;          
+            width: 100%;
+            height: 65vh;
+            overflow: hidden;
+        }
+        #myVideo video{
+            width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+    background: #232a34;
+        }
+
+        @media (max-width: 500px){
+                #myVideo{
+                    margin-top: 45em;
+                }
+        }
+    </style>
+
+    <!-- Video End -->
+
     <!-- categories section start -->
     <div class="categories_sec_wrapper">
         <div class="container">
@@ -430,21 +460,22 @@ Template Name: Live Event
     <!--Blogs Section-->
 
    
-
+    
     <div data-scroll-index="2">
         <section class="latest-news-area" id="latest">
             <div class="container">
                 <div class="row">
                     <div class="col-sm-12">
-                        <div class="section_title">
+                        <div class="lv_heading_center" style="margin-top: 5em;">
                             <div class="section_subtitle">
                                 <h1 class="text-center textWhite" data-aos="fade-up" data-aos-duration="90000" data-aos-delay="50">Our Blogs</h1>
                             </div>
-                            <h2 class="textWhite">Recent <strong>Blogs</strong></h2>
+                            <h2 class="textWhite" style="text-align: center;"  data-aos="fade-up" data-aos-duration="90000" data-aos-delay="70">Recent <strong>Blogs</strong></h2>
                         </div>
                     </div>
                 </div>
                 <br><br>
+                <div class="eventContainer" style="margin-left: -2em;">
                 <div class="row">
                     <div class="news-active">
                         <div class="col-md-4">
@@ -652,13 +683,14 @@ Template Name: Live Event
             </div>
         </section>
     </div>
+    </div>
     <!--Blogs section end-->
     <!-- FAQ Wrapper Start -->
     <section data-scroll-index="3" class="section-tours-new" id="section-tours-new">
-        <div class="u-center-text-new u-margin-bottom-big-new">
-            <h2 class="heading-secondary-new textWhite" data-aos="fade-up" data-aos-duration="90000" data-aos-delay="50">
+        <div class="u-center-text-new lv_heading_center" style="float: none;">
+            <h1 class="heading-secondary-new textWhite" data-aos="fade-up" data-aos-duration="90000" data-aos-delay="50">
                 Our Team
-            </h2>
+            </h1>
         </div>
          <!-- Meet the Team Section -->
     <section class="team">
@@ -1173,13 +1205,13 @@ Template Name: Live Event
         @media (max-width: 1900px){ 
 
             .row{
-                margin-right: 0;
-                margin-left: 0;
+                margin-right: 0 !important;
+                margin-left: 0 !important;
             }
 
             .eventContainer{
                 width: 70vw;
-                margin: 0 auto;
+                margin: 0 auto !important;
             }
 
          }
@@ -1188,13 +1220,13 @@ Template Name: Live Event
         @media (max-width: 1700px){ 
 
             .row{
-                margin-right: 0;
-                margin-left: 0;
+                margin-right: 0 !important;
+                margin-left: 0 !important;
             }
 
             .eventContainer{
-                width: 80vw;
-                margin: 0 auto;
+                width: 80vw !important;
+                margin: 0 auto !important;
             }
 
         }
@@ -1203,13 +1235,13 @@ Template Name: Live Event
         @media (max-width: 1400px)
         {
             .row{
-                margin-right: 0;
-                margin-left: 0;
+                margin-right: 0 !important;
+                margin-left: 0 !important;
             }
 
             .eventContainer{
                 width: 90vw;
-                margin: 0 auto;
+                margin: 0 auto !important;
             }
         }
 
@@ -1233,7 +1265,7 @@ Template Name: Live Event
         @media (max-width: 991px){
 
             .eventContainer{
-                margin: 0 auto;
+                margin: 0 auto !important;
                 width: 90vw;
             }
 
@@ -1355,6 +1387,35 @@ Template Name: Live Event
             $.scrollIt();
         });
     </script>
+
+<script>
+
+    console.log("In the Video")
+
+    let options = {
+        // root needs to be the parent of the object which we are observing in this case the video
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.8 
+        // It means that if 100% area is visible then only play the video
+    }
+    let callback = (entries, obserer)=> {
+        entries.forEach(entry => {
+            if(entry.target.id == 'video')
+            {
+                if(entry.isIntersecting){
+                    entry.target.play();
+                }
+                else{
+                    entry.target.pause();
+                }
+            }
+        });
+    }
+    let observer = new IntersectionObserver(callback, options);
+    observer.observe(document.querySelector('#video'));
+</script>
+
     <script>
         // Initialize and add the map
         function initMap() {
