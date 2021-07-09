@@ -46,9 +46,6 @@
     font-family: 'Lato', sans-serif;
 }
 
-#darkModeToggle:checked ~ label .toggle{
-    transform: translateX(1.8em);
-}
 
 #darkModeToggle:checked ~ .colorSwitch::before{
 

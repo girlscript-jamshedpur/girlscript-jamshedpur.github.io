@@ -48,6 +48,13 @@ Template Name: Live Event
     <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap" rel="stylesheet">
     
     <script defer src="./js/dark_mode.js"></script>
+    <script type="text/javascript" src="./js/contact.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+        emailjs.init("user_G6G54FLuGRn20rsixJJc7");
+        })();
+    </script>
     <!-- favicon links -->
     <link rel="shortcut icon" type="image/icon" href="images/header/favicon.png" />
     <!-- Aos -->
@@ -127,11 +134,12 @@ Template Name: Live Event
                                             <li><a href="2"><span class="fa fa-newspaper-o"></span> OUR BLOGS</a></li>
                                             <li><a href="3"><span class="fa fa-list"></span> TEAM</a></li>
                                             <li><a href="4"><span class="fa fa-calendar"></span> EVENTS</a></li>
+                                            
                                             <li class="bg">
                                                 <a class="darkMode">
                                                     <div class="wrapper-color-switch">
                                                     <input type="checkbox" id="darkModeToggle">
-                                                    <label for="darkModeToggle" class="colorSwitch">                                                        
+                                                    <label for="darkModeToggle" class="colorSwitch"  style="cursor: pointer;">                                                        
                                                         
                                                     </label>
                                                 </div>
@@ -146,6 +154,9 @@ Template Name: Live Event
                 </div>
             </div>
         </div>
+
+       
+
         <!-- Header  End -->
 
         <div class="lv_timer_wrapper lv_single_index_menu">
@@ -868,6 +879,36 @@ Template Name: Live Event
                 <div class="row" style="display: flex; width: 100%;">
                     <div class="event-active">
 
+                        <div class="col-md-4 media" style="height: 500px;">
+                            <div class="latest-event-wrap">
+                                <div class="event-img">
+                                    <img src="./images/content/Badge.png" class="img-responsive"
+                                        style="height: 310px; width: 100%">
+                                </div>
+                                <div class="event-content">
+                                    <div class="social">
+                                    <a href="https://twitter.com/girlscript_Jsr"><span class="fa fa-twitter"></span>
+                                    </a>
+                                    <a href="https://www.instagram.com/girlscript_jamshedpur/"><span
+                                            class="fa fa-instagram"></span> </a>
+                                    <a href="https://www.linkedin.com/company/girlscript-jamshedpur/"><span
+                                            class="fa fa-linkedin"></span> </a>
+                                    <a href="https://github.com/girlscript-jamshedpur"><span
+                                            class="fa fa-github"></span>
+                                    </a>
+                                </div>
+                                    <p>
+                                    <h1 class="textWhite">Application of ML</h1>
+                                    A 3 day session on implementation of Machine Learning in cricket and predictive analytics by Anurag Sinha 
+                                    </p><br>
+                                    
+                                    <button class="btn btn-info"><a
+                                            href="eventPages/application_of_ml.html">Know
+                                            More</a></button>
+                                </div>
+                            </div>
+                        </div>
+
 
                         <div class="col-md-4 media">
                             <div class="latest-event-wrap">
@@ -1314,6 +1355,18 @@ Template Name: Live Event
     <!-- End of Internal CSS -->
 
     <!--Events section end-->
+
+  
+
+
+
+
+
+
+
+
+
+
     <!-- Footer Wrapper Start -->
     <div class="lv_footer_wrapper">
         <a href="javascript:void(0);" id="scroll" title="Scroll to Top" style="display: none;"><span></span></a>
@@ -1382,6 +1435,7 @@ Template Name: Live Event
     <script type="text/javascript" src="js/smoothscroll.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
     <script type="text/javascript" src="js/swiper.min.js"></script>
+    
     <script>
         $(function () {
             $.scrollIt();
